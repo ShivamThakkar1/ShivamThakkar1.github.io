@@ -1,33 +1,51 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <script type="text/javascript">
-            window.onload = function() {
 
-                var desktopFallback = "https://instagram.com/_shivam_thakkar",
-                mobileFallback = "https://Instagram.com/_shivam_thakkar",
-                app = "safari-https://www.google.com/search?kgmid=/g/11rz2nhfqw&hl=en-IN&q=shivam+thakkar";
+   
 
-                if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-                    window.location = app;
-                    window.setTimeout(function() {
-                        window.location = mobileFallback;
-                    }, 25);
-                } else {
-                    window.location = desktopFallback;
-                }
+<head> 
 
-                function killPopup() {
-                    window.removeEventListener('pagehide', killPopup);
-                }
+      <title>Open URL in New Tab </title>
 
-                window.addEventListener('pagehide', killPopup);
+</head>
 
-            };
-        </script>
-    </body>
+   
+
+<body>
+ 
+
+     
+
+<p> Click the button to open 
+
+          <b> geeksforgeeks.org </b>
+
+          in new tab 
+
+      </p>
+ 
+ 
+
+    <button onclick="NewTab()">
+
+        Open Geeksforgeeks
+
+    </button>
+ 
+
+    <script>
+
+        function NewTab() {
+
+            window.open(
+
+            "https://www.google.com/search?kgmid=/g/11rz2nhfqw&hl=en-IN&q=shivam+thakkar", "_blank");
+
+        }
+
+    </script>
+ 
+
+</body>
+ 
+
 </html>
