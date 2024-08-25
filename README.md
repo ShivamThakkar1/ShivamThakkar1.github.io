@@ -1,4 +1,4 @@
 # Dynamic YouTube deep link generator
 
 
-http://openyt.ml?u=
+https://shivamthakkar1.github.io/yt?u=
